@@ -12,6 +12,12 @@ html {
 
 body {
     line-height: 1.5;
+    background: url("../images/background.png") aquamarine;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
 }
 
 ul {
@@ -24,8 +30,12 @@ a {
 
 .main-container {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     margin: 0px 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 20px black;
+    height: 100vh;
+    grid-template-rows: 70px 300px auto 70px;
 }
 
 /* NavBar */
@@ -79,29 +89,34 @@ header .container {
 /* Main Section */
 .mainsection {
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 400px);
+    gap: 10px;
+    grid-template-columns: 5fr minmax(200px, 2.5fr);
     grid-template-areas: "content side";
+    height: 100%;
 }
 
 /* Sidebar */
 .sidebar {
     grid-area: side;
     text-align: center;
+    background-color: aqua;
 }
 
 .sidebar img {
     border-radius: 50%;
-    min-width: 200px;
-    max-width: 400px;
+    width: 100%;
 }
 
 /* Content */
 .content {
     grid-area: content;
+    background-color: yellow;
 }
+
 
 
 /* Footer */
 footer .container {
-    background-color: red;
+    height: 100%;
+    background-color: green;
 }
