@@ -31,11 +31,14 @@ a {
 .main-container {
     display: grid;
     gap: 10px;
-    margin: 0px 10%;
+    margin: 0px auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 20px black;
+    max-width: 1200px;
+    min-height: 935px;
     height: 100vh;
     grid-template-rows: 70px 300px auto 70px;
+    overflow:hidden;
 }
 
 /* NavBar */
