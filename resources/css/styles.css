@@ -1,0 +1,107 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    display: grid;
+    gap: 20px;
+    margin: 0px 10%;
+}
+
+/* NavBar */
+.navbar {
+    border-bottom: 1px solid darkgrey;
+}
+.navbar .container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    max-height: 70px;
+
+}
+
+.navbar .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+    height: 100%;
+    padding: 5px 10px;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a:hover {
+    color: darkgrey
+}
+
+/* Header */
+
+header .container {
+    background-color: red;
+    height: 300px;
+}
+
+/* Main Section */
+.mainsection {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 400px);
+    grid-template-areas: "content side";
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: side;
+    text-align: center;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/* Content */
+.content {
+    grid-area: content;
+}
+
+
+/* Footer */
+footer .container {
+    background-color: red;
+}
