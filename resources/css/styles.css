@@ -181,6 +181,12 @@ header {
     }
 }
 
+@media only screen and (max-height: 950px) {
+    #main #intro::before {
+        background-position: 50% 00px;
+    }
+}
+
 /* ---------------------------------------------- */
 
 /* About Me */
