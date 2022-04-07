@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+h1 {
+    font-size: 3rem;;
+}
+
 /* ---------------------------------------------- */
 
 /* Fonts */
@@ -72,9 +76,13 @@ header {
     align-content: center;
     background-color: white;
     padding: 0 10%;
+    position: fixed; /* Added to support older browsers */
+    top: 0;
+    left: 0;
+    right: 0;
     position: sticky;
     z-index: 999;
-    top: 0;
+
 }
 
 #menu {
@@ -109,10 +117,39 @@ header {
 
 /* ---------------------------------------------- */
 
+/* Main */
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ---------------------------------------------- */
+
 /* Introduction */
 #main #intro {
-    background-color: purple;
-    height: 28rem;
+    display: flex;
+    position: relative;
+    height: 35rem;
+}
+
+#main #intro::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: url(/resources/images/introduction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% -300px;
+    background-attachment: fixed;
+    opacity: 0.75;
+}
+
+#main h1 {
+    position: relative;
 }
 
 /* ---------------------------------------------- */
