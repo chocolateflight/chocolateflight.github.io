@@ -129,6 +129,9 @@ header {
 /* Introduction */
 #main #intro {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 35rem;
 }
@@ -148,8 +151,33 @@ header {
     opacity: 0.75;
 }
 
-#main h1 {
+#main #intro .welcome-text {
     position: relative;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+#main #intro .welcome-text::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: lightgrey;
+    opacity: 0.5;
+}
+
+#main #intro .welcome-text h1 {
+    position: relative;
+}
+
+
+@media only screen and (min-width: 2200px) {
+    #main #intro::before {
+        background-position: 50% -800px;
+    }
 }
 
 /* ---------------------------------------------- */
