@@ -149,6 +149,7 @@ header {
     background-position: 50% -300px;
     background-attachment: fixed;
     opacity: 0.75;
+    transition: background-position .2s ease;
 }
 
 #main #intro .welcome-text {
