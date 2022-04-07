@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+/* ---------------------------------------------- */
+
 /* Fonts */
 /* roboto-100 - latin */
 @font-face {
@@ -46,22 +48,109 @@
          url('../fonts/roboto-v29-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
   }
 
+/* ---------------------------------------------- */
+
 /* HTML */
 html {
     font-size: 16px;
-    font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Page */
+/* ---------------------------------------------- */
 
-/* Header / Nav */
+/* Page */
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------- */
+
+/* Header */
+header {
+    display: block;
+    align-content: center;
+    background-color: white;
+    padding: 0 10%;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+#menu {
+    min-height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu .main-menu {
+    transition: background-color .6s ease
+}
+
+#menu .main-menu:hover {
+    background-color: lightgrey;
+}
+
+#menu .main-menu img {
+    margin: 1.25rem;
+    height: 20px;
+}
+
+#menu .logo img {
+    height: 60px;
+}
+
+@media only screen and (max-width: 410px) {
+    header {
+        padding: 0;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* Introduction */
+#main #intro {
+    background-color: purple;
+    height: 28rem;
+}
+
+/* ---------------------------------------------- */
 
 /* About Me */
+#main #about {
+    background-color: yellow;
+    height: 28rem;
+}
+
+/* ---------------------------------------------- */
 
 /* Projects */
+#main #projects {
+    background-color: orange;
+    height: 28rem;
+}
+
+/* ---------------------------------------------- */
 
 /* CV */
+#main #cv {
+    background-color: blue;
+    height: 28rem;
+}
+
+/* ---------------------------------------------- */
 
 /* Socials */
+#main #socials {
+    background-color: green;
+    height: 28rem;
+}
+
+/* ---------------------------------------------- */
 
 /* Footer */
+#footer-cont {
+    background-color: gray;
+    height: 4.375rem;
+}
