@@ -181,6 +181,13 @@ header {
     }
 }
 
+@media only screen and (min-width: 3000px) {
+    #main #intro::before {
+        background-position: 50% -1000px;
+    }
+}
+
+
 @media only screen and (max-height: 950px) {
     #main #intro::before {
         background-position: 50% 00px;
