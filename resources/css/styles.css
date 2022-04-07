@@ -191,7 +191,7 @@ header {
 
 /* About Me */
 #main #about {
-    background-color: yellow;
+    background-color: #cce3ff4f; /* Placeholder */
     height: 28rem;
 }
 
@@ -199,7 +199,7 @@ header {
 
 /* Projects */
 #main #projects {
-    background-color: orange;
+    background-color: #ffdc7a8a; /* Placeholder */
     height: 28rem;
 }
 
@@ -207,7 +207,7 @@ header {
 
 /* CV */
 #main #cv {
-    background-color: blue;
+    background-color: #cce3ff4f; /* Placeholder */
     height: 28rem;
 }
 
@@ -215,7 +215,7 @@ header {
 
 /* Socials */
 #main #socials {
-    background-color: green;
+    background-color: #ffdc7a8a; /* Placeholder */
     height: 28rem;
 }
 
@@ -223,6 +223,6 @@ header {
 
 /* Footer */
 #footer-cont {
-    background-color: gray;
+    background-color: #cce3ff4f; /* Placeholder */
     height: 4.375rem;
 }
