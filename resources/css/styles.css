@@ -210,7 +210,6 @@ header {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    /* background-color: black; */
     opacity: 0.5;
 }
 
@@ -246,7 +245,7 @@ header {
 
 /* About Me */
 #main #about {
-    background-color: black; /* Placeholder */
+    background-color: black;
     height: 40rem;
     display: flex;
     align-items: center;
@@ -293,7 +292,7 @@ header {
 
 /* Projects */
 #main #projects {
-    background-color: white; /* Placeholder */
+    background-color: white;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -353,7 +352,7 @@ header {
 
 /* CV */
 #main #cv {
-    background-color: black; /* Placeholder */
+    background-color: black;
     height: 28rem;
 }
 
@@ -361,7 +360,7 @@ header {
 
 /* Socials */
 #main #socials {
-    background-color: white; /* Placeholder */
+    background-color: white; 
     height: 28rem;
 }
 
@@ -369,6 +368,6 @@ header {
 
 /* Footer */
 #footer-cont {
-    background-color: black; /* Placeholder */
+    background-color: black; 
     height: 4.375rem;
 }
