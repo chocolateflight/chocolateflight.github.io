@@ -183,7 +183,7 @@ header {
 
 #main #intro #background-video {
     width: 100vw;
-    height: 40rem;
+    height: 60rem;
     object-fit: cover;
     position: fixed;
     top: 4.375rem;
