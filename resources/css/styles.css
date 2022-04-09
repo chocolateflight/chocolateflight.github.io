@@ -164,6 +164,11 @@ header {
     flex-direction: column;
 }
 
+#main .polygon #poly {
+    display: block;
+    z-index: 999;
+}
+
 /* ---------------------------------------------- */
 
 /* Introduction */
@@ -173,12 +178,12 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 35rem;
+    height: 36.5rem;
 }
 
 #main #intro #background-video {
     width: 100vw;
-    height: 35rem;
+    height: 40rem;
     object-fit: cover;
     position: fixed;
     top: 4.375rem;
@@ -219,25 +224,37 @@ header {
         bottom: 0px;
         right: 0px;
         left: 0px;
+        height: 40rem;
         background-image: url(/resources/images/darkocean.jpg);
         background-size: cover;
         opacity: 0.75;
+        z-index: -1;
     }
 }
 
 /* ---------------------------------------------- */
 
+
 /* About Me */
 #main #about {
-    background-color: darkslategray; /* Placeholder */
-    height: 28rem;
+    background-color: black; /* Placeholder */
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+#main #about #me {
+    height: 70%;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 5rem;
 }
 
 /* ---------------------------------------------- */
 
 /* Projects */
 #main #projects {
-    background-color: darkblue; /* Placeholder */
+    background-color: white; /* Placeholder */
     height: 28rem;
 }
 
@@ -245,7 +262,7 @@ header {
 
 /* CV */
 #main #cv {
-    background-color: darkslategrey; /* Placeholder */
+    background-color: black; /* Placeholder */
     height: 28rem;
 }
 
@@ -253,7 +270,7 @@ header {
 
 /* Socials */
 #main #socials {
-    background-color: darkblue; /* Placeholder */
+    background-color: white; /* Placeholder */
     height: 28rem;
 }
 
@@ -261,6 +278,6 @@ header {
 
 /* Footer */
 #footer-cont {
-    background-color: darkslategrey; /* Placeholder */
+    background-color: black; /* Placeholder */
     height: 4.375rem;
 }
