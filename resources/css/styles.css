@@ -246,6 +246,7 @@ header {
     height: 40rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -261,6 +262,7 @@ header {
 #main #about p {
     color: white;
     margin-right: 2rem;
+    max-width: 50%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -277,6 +279,8 @@ header {
 
     #main #about p {
         margin-left: 2rem;
+        max-width: 100%;
+    
     }
 }
 
