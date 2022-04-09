@@ -209,13 +209,16 @@ header {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background-color: lightgrey;
+    /* background-color: black; */
     opacity: 0.5;
 }
 
 #main #intro .welcome-text h1 {
     position: relative;
+    color: white;
+    text-shadow: 1px 1px 1px black, 0 0 1em black, 0 0 0.2em black;
 }
+
 
 @media only screen and (max-width: 1366px) {
     #main #intro #background-video {
