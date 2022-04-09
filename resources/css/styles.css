@@ -162,7 +162,6 @@ header {
 #main {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 /* ---------------------------------------------- */
@@ -177,20 +176,13 @@ header {
     height: 35rem;
 }
 
-#main #intro::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background-image: url(/resources/images/introduction.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% -300px;
-    background-attachment: fixed;
-    opacity: 0.75;
-    transition: background-position .2s ease;
+#main #intro #background-video {
+    width: 100vw;
+    height: 35rem;
+    object-fit: cover;
+    position: fixed;
+    top: 4.375rem;
+    z-index: -1;
 }
 
 #main #intro .welcome-text {
@@ -215,24 +207,21 @@ header {
     position: relative;
 }
 
-
-@media only screen and (min-width: 2200px) {
-    #main #intro::before {
-        background-position: 50% -800px;
+@media only screen and (max-width: 1366px) {
+    #main #intro #background-video {
+        display: none;
     }
-}
 
-@media only screen and (min-width: 3000px) {
     #main #intro::before {
-        background-position: 50% -1000px;
-    }
-}
-
-
-@media only screen and (max-width: 1366px) and (max-height: 1366px) {
-    #main #intro::before {
-        background-attachment: scroll;
-        background-position: center;
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background-image: url(/resources/images/darkocean.jpg);
+        background-size: cover;
+        opacity: 0.75;
     }
 }
 
@@ -240,7 +229,7 @@ header {
 
 /* About Me */
 #main #about {
-    background-color: #cce3ff4f; /* Placeholder */
+    background-color: darkslategray; /* Placeholder */
     height: 28rem;
 }
 
@@ -248,7 +237,7 @@ header {
 
 /* Projects */
 #main #projects {
-    background-color: #ffdc7a8a; /* Placeholder */
+    background-color: darkblue; /* Placeholder */
     height: 28rem;
 }
 
@@ -256,7 +245,7 @@ header {
 
 /* CV */
 #main #cv {
-    background-color: #cce3ff4f; /* Placeholder */
+    background-color: darkslategrey; /* Placeholder */
     height: 28rem;
 }
 
@@ -264,7 +253,7 @@ header {
 
 /* Socials */
 #main #socials {
-    background-color: #ffdc7a8a; /* Placeholder */
+    background-color: darkblue; /* Placeholder */
     height: 28rem;
 }
 
@@ -272,6 +261,6 @@ header {
 
 /* Footer */
 #footer-cont {
-    background-color: #cce3ff4f; /* Placeholder */
+    background-color: darkslategrey; /* Placeholder */
     height: 4.375rem;
 }
