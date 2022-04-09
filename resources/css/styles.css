@@ -348,26 +348,43 @@ header {
     }
 }
 
-/* ---------------------------------------------- */
-
-/* CV */
-#main #cv {
-    background-color: black;
-    height: 28rem;
-}
 
 /* ---------------------------------------------- */
 
 /* Socials */
 #main #socials {
-    background-color: white; 
-    height: 28rem;
+    padding: 1rem 2rem;
+    background-color: black; 
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
+
+#main #socials #socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+#main #socials #socialLinks a {
+    text-decoration: none;
+    color: white
+}
+
+#main #socials #socialLinks a:hover {
+    transform: scale(1.1)
+}
+
 
 /* ---------------------------------------------- */
 
 /* Footer */
 #footer-cont {
-    background-color: black; 
-    height: 4.375rem;
+    background-color: white; 
+    height: auto;
+    font-size: 0.8rem;
+    padding: 1rem 0 0 0.1rem;
+    font-style: italic;
 }
