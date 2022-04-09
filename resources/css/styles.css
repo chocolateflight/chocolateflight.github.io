@@ -241,13 +241,36 @@ header {
     height: 40rem;
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 #main #about #me {
-    height: 70%;
-    width: auto;
+    width: 30%;
+    height: auto;
     border-radius: 50%;
     margin-left: 5rem;
+}
+
+#main #about p {
+    color: white;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 470px) {
+    #main #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main #about #me {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    #main #about p {
+        margin-left: 2rem;
+    }
 }
 
 /* ---------------------------------------------- */
