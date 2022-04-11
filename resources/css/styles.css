@@ -94,11 +94,16 @@ header {
 }
 
 #menu #main-menu {
-    transition: background-color .6s ease
+    transition: background-color .6s ease;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none;
 }
 
 #menu #main-menu:hover {
     background-color: lightgrey;
+    cursor: pointer;
 }
 
 #menu #main-menu:active {
@@ -374,7 +379,7 @@ header {
 }
 
 #main #socials #socialLinks a:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 
