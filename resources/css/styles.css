@@ -350,6 +350,14 @@ header {
     font-style: italic;
 }
 
+#main .project .projectinformation a:active {
+    color: #00005c;
+}
+
+#main .project .projectinformation a:hover {
+    text-shadow: 0.3px 0.3px 0.1px #00005c;
+}
+
 @media only screen and (max-width: 500px) {
     #main #projects p,
     #main #projects a {
