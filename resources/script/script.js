@@ -7,7 +7,7 @@ let isMenuOpen = 0;
 
 sideMenu.style.display = "none"
 
-let openMenu = function() {
+let opencloseMenu = function() {
     if (isMenuOpen === 0) {
         sideMenu.style.display = "block";
         isMenuOpen = 1;
@@ -17,14 +17,9 @@ let openMenu = function() {
     };
 };
 
-let closeMenu = function() {
-    sideMenu.style.display = "none";
-    isMenuOpen = 0;
-}
-
-menuTarget.addEventListener("click", openMenu);
+menuTarget.addEventListener("click", opencloseMenu);
 
 for (let i = 0; i < sideMenuItem.length; i++) {
-    sideMenuItem[i].addEventListener("click", closeMenu);
+    sideMenuItem[i].addEventListener("click", opencloseMenu);
 }
 
